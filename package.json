@@ -1,0 +1,10 @@
+{
+  "name": "beautiful-saber",
+  "version": "0.0.1",
+  "description": "A clone of beautiful-jekyll but for Saber.land",
+  "main": "index.js",
+  "repository": "https://github.com/techformist/saber-theme-beautiful-saber.git",
+  "author": "Prashanth Krishnamurthy",
+  "license": "MIT",
+  "private": false
+}
