@@ -27,6 +27,7 @@ figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height}
     $base-font-family;
+
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -111,8 +112,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: $base-font-weight * 2;
-  font-family: "Helvetica", "Open Sans", "Arial";
+  font-weight: 800;
+  font-family: "Open Sans", "Helvetica", "Arial";
 }
 
 p {

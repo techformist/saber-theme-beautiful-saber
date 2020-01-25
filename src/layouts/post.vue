@@ -12,6 +12,10 @@
         </p>
       </header>
 
+      <div class="post-cover" v-if="page.assets.cover">
+        <img :src="page.assets.cover" />
+      </div>
+
       <div class="post-content e-content" itemprop="articleBody">
         <slot name="default" />
       </div>

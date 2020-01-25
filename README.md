@@ -8,28 +8,103 @@ This is a starter project/theme for [saber.land](https://saber.land/).
 
 If you haven't checked out Saber yet, you should. It's a wonderful project that has the potential to solve world hunger (or something). To be more specific: Saber enables you to create static sites using VueJS.
 
+## Demo
+
+See https://beautiful-saber.netlify.com.
+
 ## Installation
 
-Don't have Saber? Head over to its [quick introduction](https://saber.land/docs) and get back here.
+Don't know Saber? Head over to its [quick introduction](https://saber.land/docs) and get back here.
 
-As is the case with all themes (?), start by installing this theme in your existing saber install.
+### Get started the easy way
 
-```
-yarn add saber-theme-beautiful-saber
-```
-
-This theme also uses a few plugins and this is a good time to install them.
+Clone the starter project for this starter theme and you will get started in ~10 seconds.
 
 ```
-yarn add saber-plugin-query-posts saber-plugin-feed
+git clone https://github.com/techformist/beautiful-saber-example-site.git
+cd beautiful-saber-example-site
+yarn install
+yarn dev
 ```
 
-### Configuration
+Go to https://localhost:3000 to view your brand new site.
 
-In your `saber-config.yml` in the root directory, include the following lines -
+### Arguably better way
+
+Install saber.
 
 ```
+mkdir my-awesome-site
+cd my-awesome-site
+
+yarn init -y
+yarn add saber
+
+```
+
+Create directories for your content - `pages`, `pages\_posts`, `theme` directories - see [project structure](https://saber.land/docs/project-structure.html) for more details.
+
+Next, install `saber-theme-beautiful-saber` theme and required plugins.
+
+```
+yarn add saber-theme-beautiful-saber saber-plugin-query-posts saber-plugin-feed
+```
+
+In `scripts` section of your `package.json`, include two lines -
+
+```json
+  "scripts": {
+    // ...
+    "dev": "saber",
+    "build": "saber build"
+    // ...
+  }
+```
+
+Create `saber-config.yml` file in the saber root folder as described [here](https://saber.land/docs/saber-config.html#theme).
+
+```yml
 theme: beautiful-saber
+```
+
+You are now ready to run your site.
+
+```
+yarn dev
+```
+
+You will not see anything when you go to https://localhost:3000 because there isn't anything right now.
+
+- Create `index.md` under `pages` directory and add some content
+- Create a post under `pages/_posts` directory to see the post on home page
+
+Have fun with your new site.
+
+## Configuration
+
+Configure your site using `saber-config.yml`. Below parameters are self explanatory.
+
+```yml
+theme: beautiful-saber
+
+siteConfig:
+  title: An Awesome Blog
+  url: https://beautiful-saber.saberjs.org
+  author: Marcus Aurelius
+  email: marcus@iam.stoic
+  description: I would have loved a description here, but I am happy as it is.
+
+themeConfig:
+  nav:
+    - text: Home
+      link: /
+    - text: About
+      link: /about.html
+  social:
+    twitter: techformist
+    github: techformist
+    rss: true
+  disqus: techformist
 
 plugins:
   - resolve: saber-plugin-query-posts
@@ -40,17 +115,31 @@ plugins:
 
 As already evident, these lines indicate the theme and the plugins to build out the features.
 
-## Back story (_every project needs one_)
+You can add new plugins to enhance your site's features -
+
+## Deployment
+
+When you are ready, [build your site](https://saber.land/docs/deployment.html) with -
+
+```
+yarn saber build
+```
+
+You can deploy the `public` directory to GitHub, Netlify, S3, etc. to start hosting your website.
+
+## Back story
+
+(stuff that no one asked for)
 
 I loved [beautiful-jekyll](https://deanattali.com/beautiful-jekyll/) back in the day. I had blogs (plural) using that theme, and will remain ever thankful for the author's effort.
 
-Now that I am in a position to spare effort to do something, what better way could there be to get that design to newer heights? So then, I created beautiful-saber, a poorer cousin to the original Jekyll theme but with all the advantages of a modern toolset in Saber and VueJS. Of course, I could not do this without egoist showing us cool stuff in [Minima](https://github.com/saberland/saber-theme-minima) theme.
+Now that I am in a position to spare effort to do something, what better way could there be to get that design to newer heights? So then, I created `beautiful-saber`, a poorer cousin to the original Jekyll theme but with all the advantages of a modern toolset in Saber and VueJS. Of course, I could not do this without [Kevin Titor / egoist](http://github.com/egoist) showing us how cool stuff can happen in Saber using [Minima](https://github.com/saberland/saber-theme-minima) theme.
 
 ## Credits
 
 This template design is directly inspired by Beautiful Jekyll, a theme for Jekyll by [Dean Attali](https://github.com/daattali).
 
-However, there are many changes made to the underlying code/structure to bring that to the amazing Saber platform.
+Of course, this theme wouldn't exist without [Saber.land](https://saber.land).
 
 ## License
 

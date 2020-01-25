@@ -2,14 +2,18 @@
 layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
+gh-repo: techformist/saber-theme-beautiful-saber
 gh-badge: [star, fork, follow]
 date: 2020-01-03
+assets:
+  cover: ../../img/bold-dog.jpg
 tags: [test]
 comments: true
 ---
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+
+Oh, btw, the cover image is by [Charles on Unsplash](https://unsplash.com/@charlesdeluvio). Now, back to Markdown.
 
 **Here is some bold text**
 

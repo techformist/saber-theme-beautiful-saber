@@ -11,6 +11,10 @@ Saber + Vue form a dynamic duo. We can do amazing things on the page including a
 
 <input v-model="a" ></input> + <input v-model="b" ></input> = <input :value="sum" style="width:60px"></input>
 
+Or, include a picture of a beautiful saber.
+
+![beautiful-saber](../img/saber.png)
+
 <script>
 export default {
   data() {
