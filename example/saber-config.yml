@@ -1,0 +1,26 @@
+theme: ../src
+
+siteConfig:
+  title: An Awesome Blog
+  url: https://beautiful-saber.saberjs.org
+  author: Marcus Aurelius
+  email: marcus@iam.stoic
+  description: I would have loved a description here, but I am happy as it is.
+
+themeConfig:
+  nav:
+    - text: Home
+      link: /
+    - text: About
+      link: /about.html
+  social:
+    twitter: techformist
+    github: techformist
+    rss: true
+  disqus: techformist
+
+plugins:
+  - resolve: saber-plugin-query-posts
+  - resolve: saber-plugin-feed
+    options:
+      atomFeed: true
