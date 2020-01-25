@@ -1,6 +1,6 @@
 {
   "name": "saber-theme-beautiful-saber",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A clone of beautiful-jekyll but for Saber.land",
   "main": "index.js",
   "repository": "https://github.com/techformist/saber-theme-beautiful-saber.git",
